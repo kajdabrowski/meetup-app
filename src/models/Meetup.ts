@@ -1,7 +1,7 @@
 export interface Meetup {
-  title: String;
-  description: String;
-  date: String; //yyyy-mm-dd
+  title: string;
+  date: string; //yyyy-mm-dd
+  description: string;
   comments: [];
-  rating: Number;
+  rating: number;
 }
