@@ -6,6 +6,7 @@ describe('Card component', () => {
   it('renders without errors', () => {
     //Smoke test
     const testData: Meetup = {
+      id: 1,
       title: 'Fotboll',
       date: '2021-08-12',
       description: 'Korpenboll, alla mot alla',
@@ -18,6 +19,7 @@ describe('Card component', () => {
   it('renders meetup title and date', () => {
     //Black box test
     const testData: Meetup = {
+      id: 2,
       title: 'Hockey',
       date: '2020-05-10',
       description: 'Vuxna män slåss i rustning',
