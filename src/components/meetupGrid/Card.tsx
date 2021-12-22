@@ -5,8 +5,8 @@ interface Props {
 }
 
 const Card = ({ meetup }: Props) => (
-  <section>
-    <h3>{meetup.title}</h3>
+  <section className="card">
+    <h3 className="card-title">{meetup.title}</h3>
     <p>{meetup.description}</p>
     <p>{meetup.comments}</p>
     <p>{meetup.rating}</p>

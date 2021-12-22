@@ -29,14 +29,6 @@ const data: Meetup[] = [
 ];
 
 const Grid = () => {
-  // const testData: Meetup = {
-  //   id: 1,
-  //   title: '',
-  //   date: '',
-  //   description: '',
-  //   comments: [],
-  //   rating: 10,
-  // };
   return (
     <main className="card-grid">
       {data.map((meetup) => (
