@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 interface Props {
   searchText: string;
   //setFunctions in useState hook always returns void.

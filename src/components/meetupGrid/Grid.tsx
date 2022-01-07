@@ -28,10 +28,16 @@ const data: Meetup[] = [
   },
 ];
 
-const Grid = () => {
+interface Props {
+  searchString: string;
+}
+
+const Grid = ({ searchString }: Props) => {
+  const filteredData = data.filter((meetup) => meetup.title.toLowerCase().includes(searchString.toLowerCase()));
+
   return (
     <main className="card-grid">
-      {data.map((meetup) => (
+      {filteredData.map((meetup) => (
         <Card key={meetup.id} meetup={meetup} />
       ))}
     </main>
