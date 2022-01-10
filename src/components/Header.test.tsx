@@ -29,18 +29,4 @@ describe('Header component', () => {
     //expect value to be an empty string
     expect(value).toBe('');
   });
-
-  //Moved integration test to app and rewrote test
-  // it('shows list of meetups matching search criteria when typing in input field', () => {
-  //   //render component
-  //   const wrapper = shallow(<Header searchText="" setSearchText={() => {}} />);
-  //   //Find the element
-  //   const input = wrapper.find('input');
-
-  //   //Create simulated user search string for input field
-  //   const testSearchString = 'Yoga';
-  //   //simulate the change event. Create fake event object where the target val is set to the simulated user search string.
-  //   //The event target:value is from the setSearchText hook triggered by onChange event in header component.
-  //   input.simulate('change', { target: { value: testSearchString } });
-  // });
 });

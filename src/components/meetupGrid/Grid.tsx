@@ -7,7 +7,7 @@ const data: Meetup[] = [
     title: 'Yoga i parken',
     date: '1984-05-05',
     description: 'Solhälsningar på gräsmattan',
-    comments: [],
+    comments: ['Detta är en kommentar'],
     rating: 5,
   },
   {

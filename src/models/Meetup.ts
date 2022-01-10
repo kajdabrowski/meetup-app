@@ -3,6 +3,6 @@ export interface Meetup {
   title: string;
   date: string; //yyyy-mm-dd
   description: string;
-  comments: [];
+  comments: string[]; //var tidigare en tom arr. Kan bytas till any[].
   rating: number;
 }
