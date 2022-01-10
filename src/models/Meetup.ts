@@ -5,4 +5,5 @@ export interface Meetup {
   description: string;
   comments: string[]; //var tidigare en tom arr. Kan bytas till any[].
   rating: number;
+  attending: boolean; //Added for checkbox in card component
 }

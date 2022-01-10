@@ -12,6 +12,7 @@ describe('Card component', () => {
       description: 'Korpenboll, alla mot alla',
       comments: [],
       rating: 10,
+      attending: false,
     };
     render(<Card meetup={testData} />);
   });
@@ -25,6 +26,7 @@ describe('Card component', () => {
       description: 'Vuxna män slåss i rustning',
       comments: [],
       rating: 5,
+      attending: false,
     };
     render(<Card meetup={testData} />);
 

@@ -9,6 +9,7 @@ const data: Meetup[] = [
     description: 'Solhälsningar på gräsmattan',
     comments: ['Detta är en kommentar'],
     rating: 5,
+    attending: false,
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ const data: Meetup[] = [
     description: 'Svettiga nördar gör svettiga saker',
     comments: [],
     rating: 8,
+    attending: false,
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ const data: Meetup[] = [
     description: 'Vi leker Bruce Lee vid rödvinshyllan',
     comments: [],
     rating: 10,
+    attending: false,
   },
 ];
 
