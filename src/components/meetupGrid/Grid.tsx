@@ -29,6 +29,33 @@ const data: Meetup[] = [
     rating: 10,
     attending: false,
   },
+  {
+    id: 4,
+    title: 'Kramkalas på ITHS',
+    date: '2022-07-05',
+    description: 'Myspys',
+    comments: [],
+    rating: 7,
+    attending: false,
+  },
+  {
+    id: 5,
+    title: 'Lindyhop på parkeringen',
+    date: '2022-03-10',
+    description: 'Sladda med pv:n, skaka på göten',
+    comments: [],
+    rating: 10,
+    attending: false,
+  },
+  {
+    id: 6,
+    title: 'Gyttjebrottning i tantolunden',
+    date: '2022-06-01',
+    description: 'Man mot man i leran',
+    comments: [],
+    rating: 10,
+    attending: false,
+  },
 ];
 
 interface Props {

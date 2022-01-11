@@ -34,8 +34,8 @@ const Card = ({ meetup }: Props) => {
       {comments.map((comment, index) => (
         <p key={index}>{comment}</p>
       ))}
-      <label htmlFor="checkbox">Attend event: </label>
-      <input className="card-input-attend" type="checkbox" onChange={handleAttend} />
+      <label htmlFor="checkbox">Anmäl mig: </label>
+      <input data-testid="TEST" className="card-input-attend" type="checkbox" onChange={handleAttend} />
       <p>{meetup.rating}</p>
       <input className="card-input-comment" onChange={commentOnChange} placeholder="Kommentera"></input>
       <button onClick={addComment}>Lägg till kommentar</button>
