@@ -35,9 +35,9 @@ const Card = ({ meetup }: Props) => {
         <p key={index}>{comment}</p>
       ))}
       <label htmlFor="checkbox">Attend event: </label>
-      <input type="checkbox" onChange={handleAttend} />
+      <input className="card-input-attend" type="checkbox" onChange={handleAttend} />
       <p>{meetup.rating}</p>
-      <input onChange={commentOnChange} placeholder="Kommentera"></input>
+      <input className="card-input-comment" onChange={commentOnChange} placeholder="Kommentera"></input>
       <button onClick={addComment}>Lägg till kommentar</button>
     </section>
   );

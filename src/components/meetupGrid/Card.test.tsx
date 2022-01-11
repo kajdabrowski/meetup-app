@@ -1,6 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Card from './Card';
 import { Meetup } from '../../models/Meetup';
+import { shallow, mount } from 'enzyme';
 
 describe('Card component', () => {
   it('renders without errors', () => {
@@ -32,5 +33,44 @@ describe('Card component', () => {
 
     screen.getByText(testData.title, { exact: false });
     screen.getByText(testData.date, { exact: false });
+  });
+
+  it('renders comment input with placeholder text initially', () => {
+    const testData: Meetup = {
+      id: 2,
+      title: 'Hockey',
+      date: '2020-05-10',
+      description: 'Vuxna män slåss i rustning',
+      comments: [],
+      rating: 5,
+      attending: false,
+    };
+    const wrapper = mount(<Card meetup={testData} />);
+
+    const input = wrapper.find('.card-input-comment');
+    expect(input.exists()).toBe(true);
+    expect(input.prop('placeholder')).toMatch('Kommentera');
+  });
+
+  it('renders attending input checkbox set to false initially', () => {
+    const testData: Meetup = {
+      id: 2,
+      title: 'Hockey',
+      date: '2020-05-10',
+      description: 'Vuxna män slåss i rustning',
+      comments: [],
+      rating: 5,
+      attending: false,
+    };
+    const wrapper = mount(<Card meetup={testData} />);
+
+    const input = wrapper.find('.card-input-attend');
+    console.log(input.prop);
+
+    // expect(input.prop('checked')).toBe(false);
+
+    // console.log(input.html());
+    // const value = input.render().val();
+    // console.log(value);
   });
 });
