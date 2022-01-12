@@ -63,21 +63,8 @@ describe('Card component', () => {
       attending: false,
     };
     const wrapper = mount(<Card meetup={testData} />);
-    //Ge inputen ett value för att få den defined
-    //Expecta den att bli falsy, så är det ok med undefined
     const checkbox = wrapper.find('.card-input-attend');
     console.log(checkbox.html());
     expect(checkbox.props().checked).toBeFalsy();
-
-    // console.log(checkbox.props().checked);
-
-    // expect(screen.getByTestId('TEST')).toBeInTheDocument();
-
-    // expect(checkbox.checked).toEqual(false);
-    // expect(input).toBeChecked();
-
-    // console.log(checkbox.html());
-    // const value = checkbox.render().val();
-    // console.log(value);
   });
 });

@@ -23,7 +23,7 @@ const data: Meetup[] = [
   {
     id: 3,
     title: 'Karate på systembolaget',
-    date: '2022-05-05',
+    date: '2021-05-05',
     description: 'Vi leker Bruce Lee vid rödvinshyllan',
     comments: [],
     rating: 10,
@@ -32,7 +32,7 @@ const data: Meetup[] = [
   {
     id: 4,
     title: 'Kramkalas på ITHS',
-    date: '2022-07-05',
+    date: '2021-07-05',
     description: 'Myspys',
     comments: [],
     rating: 7,
@@ -66,7 +66,7 @@ const Grid = ({ searchString }: Props) => {
   const filteredData = data.filter((meetup) => meetup.title.toLowerCase().includes(searchString.toLowerCase()));
 
   return (
-    <main className="card-grid">
+    <main className="card-grid component">
       {filteredData.map((meetup) => (
         <Card key={meetup.id} meetup={meetup} />
       ))}

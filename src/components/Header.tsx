@@ -8,7 +8,7 @@ interface Props {
 //Header impelements Props interface
 const Header = ({ searchText, setSearchText }: Props) => {
   return (
-    <header>
+    <header className="header component">
       <h1>Meetup</h1>
       <input
         type="text"

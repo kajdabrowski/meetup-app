@@ -1,3 +1,54 @@
-.App {
+/* .App {
   text-align: center;
+} */
+
+/* .component{
+  border: 2px dashed blue;
+} */
+
+body{
+  background-color: #CBC0D3;
+}
+
+.header{
+  background-color: #8E9AAF;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+.header > h1{
+  font-size: 3em;
+}
+
+.header > input{
+  padding: 0.5em;
+  border-radius: 5%;
+}
+
+.card-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin-bottom: 5em;
+  margin-top: 5em;
+}
+
+.card{
+  background-color: #DEE2FF;
+  border-radius: 5%;
+  padding: 1em;
+  margin: 1em;
+  box-shadow: 5px 10px 10px #EFD3D7;
+  border: 2px solid #EFD3D7;
+}
+
+.card > h3{
+  text-align: center;
+}
+
+.card > input, button{
+  padding: 0.2em;
+  border-radius: 5%;
+  border: none;
 }

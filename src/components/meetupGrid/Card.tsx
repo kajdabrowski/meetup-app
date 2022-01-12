@@ -27,7 +27,7 @@ const Card = ({ meetup }: Props) => {
   };
 
   return (
-    <section className="card">
+    <section className="card component">
       <h3 className="card-title">{meetup.title}</h3>
       <p>{meetup.date}</p>
       <p>{meetup.description}</p>
@@ -36,7 +36,7 @@ const Card = ({ meetup }: Props) => {
       ))}
       <label htmlFor="checkbox">Anmäl mig: </label>
       <input data-testid="TEST" className="card-input-attend" type="checkbox" onChange={handleAttend} />
-      <p>{meetup.rating}</p>
+      <p className="card-rating">Rating: {meetup.rating}</p>
       <input className="card-input-comment" onChange={commentOnChange} placeholder="Kommentera"></input>
       <button onClick={addComment}>Lägg till kommentar</button>
     </section>

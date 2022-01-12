@@ -1,9 +1,9 @@
 export interface Meetup {
   id: number;
   title: string;
-  date: string; //yyyy-mm-dd
+  date: string;
   description: string;
-  comments: string[]; //var tidigare en tom arr. Kan bytas till any[].
+  comments: string[];
   rating: number;
-  attending: boolean; //Added for checkbox in card component
+  attending: boolean;
 }
