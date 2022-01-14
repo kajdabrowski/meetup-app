@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
 import Card from './Card';
 import { Meetup } from '../../models/Meetup';
-import { shallow, mount } from 'enzyme';
+import { mount } from 'enzyme';
 
 describe('Card component', () => {
   it('renders without errors', () => {
@@ -64,7 +64,6 @@ describe('Card component', () => {
     };
     const wrapper = mount(<Card meetup={testData} />);
     const checkbox = wrapper.find('.card-input-attend');
-    console.log(checkbox.html());
     expect(checkbox.props().checked).toBeFalsy();
   });
 });

@@ -10,7 +10,7 @@ describe('Header component', () => {
 
   it('renders input element with correct placeholder text initially', () => {
     const wrapper = shallow(<Header searchText="" setSearchText={() => {}} />);
-    //White box - an input element exists
+    //White box
     expect(wrapper.exists('input')).toBe(true);
     expect(wrapper.find('input').prop('placeholder')).toMatch('Search for meetup...');
   });

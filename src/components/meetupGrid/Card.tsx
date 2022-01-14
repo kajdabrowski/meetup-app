@@ -27,7 +27,7 @@ const Card = ({ meetup }: Props) => {
   };
 
   return (
-    <section className="card component">
+    <section className="card">
       <h3 className="card-title">{meetup.title}</h3>
       <p>{meetup.date}</p>
       <p>{meetup.description}</p>

@@ -66,7 +66,7 @@ const Grid = ({ searchString }: Props) => {
   const filteredData = data.filter((meetup) => meetup.title.toLowerCase().includes(searchString.toLowerCase()));
 
   return (
-    <main className="card-grid component">
+    <main className="card-grid">
       {filteredData.map((meetup) => (
         <Card key={meetup.id} meetup={meetup} />
       ))}
